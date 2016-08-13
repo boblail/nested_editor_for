@@ -196,6 +196,8 @@
     for(var i=0, ii=nested_editors.length; i<ii; i++) {
       resetNestedEditor(nested_editors[i]);
     }
+
+    $(parent).trigger('nested-editor.reset');
   }
 
   function selectFirstFieldIn(parent) {
